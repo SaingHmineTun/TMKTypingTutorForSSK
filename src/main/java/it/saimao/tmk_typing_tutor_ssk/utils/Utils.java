@@ -1,4 +1,4 @@
-package it.saimao.tmk_typing_tutor.utils;
+package it.saimao.tmk_typing_tutor_ssk.utils;
 
 public class Utils {
     public static boolean isEnglishCharacter(String value) {

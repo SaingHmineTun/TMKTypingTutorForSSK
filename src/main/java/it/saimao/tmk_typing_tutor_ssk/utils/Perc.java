@@ -1,4 +1,4 @@
-package it.saimao.tmk_typing_tutor.utils;
+package it.saimao.tmk_typing_tutor_ssk.utils;
 
 import javafx.geometry.Rectangle2D;
 import javafx.stage.Screen;

@@ -10,32 +10,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6918b279-22a7-4615-8ec0-b793a892c068" name="Changes" comment="ၽိူမ်ႉသႂ်ႇထႅမ် ၸမ်ႈၼိူဝ် တီႈ လွၵ်းမိုဝ်း လၵ်းၸဵင်">
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/model/Theme.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/utils/UserSetting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/crimson_red_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/frost_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/golden_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/green_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/midnight_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/monochrome_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/neon_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/ocean_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/pastel_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/pinky_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/sunset_theme.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/css/using_font.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/utils/Perc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/utils/Perc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/MainController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/Summary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/Summary.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/key_map/NamKhone_KeyMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/key_map/Panglong_KeyMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/key_map/SIL_KeyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/key_map/SIL_KeyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/key_map/Yunghkio_KeyMap.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/model/Key.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/model/Key.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/model/Lesson.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/model/Lesson.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/model/Theme.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/model/Theme.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/utils/Perc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/utils/Perc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/utils/UserSetting.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/utils/UserSetting.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/utils/Utils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/utils/Utils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/day_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/light_theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/css/main_style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/css/dark_theme.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/next.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/next_white.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/images/prev.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/images/prev_white.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/META-INF/MANIFEST.MF" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/assets/lesson_4.csv" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/layout/main.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/layout/main.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/layout/summary.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/layout/summary.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,7 +102,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Artifacts",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "settings.editor.selected.configurable": "preferences.lookFeel",
@@ -137,7 +130,7 @@
   </component>
   <component name="RunManager">
     <configuration name="TMK Typing" type="Application" factoryName="Application">
-      <option name="MAIN_CLASS_NAME" value="it.saimao.tmk_typing_tutor.Main" />
+      <option name="MAIN_CLASS_NAME" value="it.saimao.tmk_typing_tutor_ssk.Main" />
       <module name="tmk_typing_tutor" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -395,8 +388,8 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor/MainController.java</url>
-          <line>498</line>
+          <url>file://$PROJECT_DIR$/src/main/java/it/saimao/tmk_typing_tutor_ssk/MainController.java</url>
+          <line>483</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
       </breakpoints>

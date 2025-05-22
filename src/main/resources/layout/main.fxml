@@ -7,200 +7,203 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.paint.*?>
 
-<BorderPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="800.0" stylesheets="@../css/dark_theme.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.saimao.tmk_typing_tutor.MainController">
-   <top>
+<BorderPane fx:id="root" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="800.0" stylesheets="@../css/dark_theme.css" xmlns="http://javafx.com/javafx/11.0.14-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="it.saimao.tmk_typing_tutor_ssk.MainController">
+    <top>
 
-      <HBox id="title" fx:id="titleBar" alignment="CENTER" minHeight="35.0" prefHeight="35.0">
-         <children>
-            <VBox fx:id="tLogo" alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
-               <children>
-                  <ImageView fx:id="imgLogo" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/app_icon_256.png" />
-                     </image></ImageView>
-               </children>
-               <padding>
-                  <Insets left="5.0" />
-               </padding>
-            </VBox>
-            <Label id="title" fx:id="tLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-font-size: 22;" text="TMK Typing Tutor" textFill="WHITE" HBox.hgrow="ALWAYS">
-            </Label>
-            <VBox id="vbMinimize" fx:id="vbMinimize" alignment="CENTER" layoutX="760.0" layoutY="10.0" prefHeight="35.0" prefWidth="50.0">
-               <children>
-                  <ImageView fx:id="imgMinimize" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/minimize.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </VBox>
-            <VBox id="vbClose" fx:id="vbClose" alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
-               <children>
-                  <ImageView fx:id="imgClose" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../images/delete.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </VBox>
-         </children>
-      </HBox>
-   </top>
-   <center>
-      <VBox prefHeight="285.0" prefWidth="716.0" spacing="15.0">
-         <children>
-            <HBox fx:id="hbSelection" alignment="CENTER_RIGHT" minHeight="50.0" spacing="10.0" BorderPane.alignment="CENTER">
-               <children>
-                  <VBox HBox.hgrow="ALWAYS">
-                     <children>
-                        <ComboBox fx:id="cbKeyboard" maxHeight="1.7976931348623157E308" prefWidth="200.0" promptText="KEYBOARD" VBox.vgrow="ALWAYS">
-                           <effect>
-                              <Lighting diffuseConstant="1.2">
-                                 <bumpInput>
-                                    <Shadow />
-                                 </bumpInput>
-                                 <light>
-                                    <Light.Distant />
-                                 </light>
-                              </Lighting>
-                           </effect>
+        <HBox id="title" fx:id="titleBar" alignment="CENTER" minHeight="35.0" prefHeight="35.0">
+            <children>
+                <VBox fx:id="tLogo" alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+                    <children>
+                        <ImageView fx:id="imgLogo" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/app_icon_256.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                    <padding>
+                        <Insets left="5.0" />
+                    </padding>
+                </VBox>
+                <Label id="title" fx:id="tLabel" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="50.0" style="-fx-font-size: 22;" text="TMK Typing Tutor for Shan Standard Keyboard" textFill="WHITE" HBox.hgrow="ALWAYS">
+                </Label>
+                <VBox id="vbMinimize" fx:id="vbMinimize" alignment="CENTER" layoutX="760.0" layoutY="10.0" prefHeight="35.0" prefWidth="50.0">
+                    <children>
+                        <ImageView fx:id="imgMinimize" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/minimize.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+                <VBox id="vbClose" fx:id="vbClose" alignment="CENTER" prefHeight="35.0" prefWidth="50.0">
+                    <children>
+                        <ImageView fx:id="imgClose" fitHeight="15.0" fitWidth="15.0" pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@../images/delete.png" />
+                            </image>
+                        </ImageView>
+                    </children>
+                </VBox>
+            </children>
+        </HBox>
+    </top>
+    <center>
+        <VBox prefHeight="285.0" prefWidth="716.0" spacing="15.0">
+            <children>
+                <HBox fx:id="hbSelection" alignment="CENTER_RIGHT" minHeight="50.0" spacing="10.0" BorderPane.alignment="CENTER">
+                    <children>
+                        <VBox HBox.hgrow="ALWAYS">
+                            <children>
+                                <ComboBox fx:id="cbKeyboard" managed="false" maxHeight="1.7976931348623157E308" prefWidth="200.0" promptText="KEYBOARD" visible="false" VBox.vgrow="ALWAYS">
+                                    <effect>
+                                        <Lighting diffuseConstant="1.2">
+                                            <bumpInput>
+                                                <Shadow />
+                                            </bumpInput>
+                                            <light>
+                                                <Light.Distant />
+                                            </light>
+                                        </Lighting>
+                                    </effect>
+                                </ComboBox>
+                            </children>
+                        </VBox>
+                        <ComboBox fx:id="cbTheme" layoutX="267.0" layoutY="10.0" maxHeight="1.7976931348623157E308" prefWidth="150.0" promptText="THEME">
+                            <effect>
+                                <Lighting diffuseConstant="1.2">
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
                         </ComboBox>
-                     </children>
-                  </VBox>
-                  <ComboBox fx:id="cbTheme" layoutX="267.0" layoutY="10.0" maxHeight="1.7976931348623157E308" prefWidth="150.0" promptText="THEME">
-                     <effect>
-                        <Lighting diffuseConstant="1.2">
-                           <bumpInput>
-                              <Shadow />
-                           </bumpInput>
-                           <light>
-                              <Light.Distant />
-                           </light>
+                        <ComboBox fx:id="cbLevel" maxHeight="1.7976931348623157E308" prefWidth="150.0" promptText="MODE" HBox.hgrow="ALWAYS">
+                            <effect>
+                                <Lighting diffuseConstant="1.2">
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </ComboBox>
+                        <Button fx:id="btPrev" contentDisplay="GRAPHIC_ONLY" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Prev">
+                            <graphic>
+                                <ImageView fx:id="ivPrev" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/prev_white.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <effect>
+                                <Lighting diffuseConstant="1.2">
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </Button>
+                        <ComboBox id="lessons" fx:id="cbLessons" maxHeight="1.7976931348623157E308" prefWidth="200.0" promptText="LESSONS" HBox.hgrow="ALWAYS">
+                            <effect>
+                                <Lighting diffuseConstant="1.2">
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </ComboBox>
+                        <Button fx:id="btNext" contentDisplay="GRAPHIC_ONLY" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Next">
+                            <graphic>
+                                <ImageView fx:id="ivNext" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../images/next_white.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <effect>
+                                <Lighting diffuseConstant="1.2">
+                                    <bumpInput>
+                                        <Shadow />
+                                    </bumpInput>
+                                    <light>
+                                        <Light.Distant />
+                                    </light>
+                                </Lighting>
+                            </effect>
+                        </Button>
+                    </children>
+                </HBox>
+                <TextField id="view" fx:id="tfView" editable="false" focusTraversable="false" layoutX="10.0" layoutY="26.0" minHeight="-Infinity" prefHeight="50.0" text="ၵဝႃႈၵႆႇ ၵွပ်ႈတႆႇ မႆႉၼိူဝ်ၵွၼ်း။ ၶဝႃႈၶႆႇ မႄႈမၼ်း တႆႇမႃးငွမ်း။">
+                    <effect>
+                        <Lighting diffuseConstant="2.0" specularConstant="0.23" specularExponent="10.92" surfaceScale="0.61">
+                            <bumpInput>
+                                <Shadow />
+                            </bumpInput>
+                            <light>
+                                <Light.Distant>
+                                    <color>
+                                        <Color red="0.7236841917037964" green="0.7236841917037964" blue="0.7236841917037964" />
+                                    </color>
+                                </Light.Distant>
+                            </light>
                         </Lighting>
-                     </effect>
-                  </ComboBox>
-                  <ComboBox fx:id="cbLevel" maxHeight="1.7976931348623157E308" prefWidth="150.0" promptText="MODE" HBox.hgrow="ALWAYS">
-                     <effect>
-                        <Lighting diffuseConstant="1.2">
-                           <bumpInput>
-                              <Shadow />
-                           </bumpInput>
-                           <light>
-                              <Light.Distant />
-                           </light>
-                        </Lighting>
-                     </effect>
-                  </ComboBox>
-                  <Button fx:id="btPrev" contentDisplay="GRAPHIC_ONLY" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Prev">
-                     <graphic>
-                        <ImageView fx:id="ivPrev" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/prev_white.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <effect>
-                        <Lighting diffuseConstant="1.2">
-                           <bumpInput>
-                              <Shadow />
-                           </bumpInput>
-                           <light>
-                              <Light.Distant />
-                           </light>
-                        </Lighting>
-                     </effect>
-                  </Button>
-                  <ComboBox id="lessons" fx:id="cbLessons" maxHeight="1.7976931348623157E308" prefWidth="200.0" promptText="LESSONS" HBox.hgrow="ALWAYS">
-                     <effect>
-                        <Lighting diffuseConstant="1.2">
-                           <bumpInput>
-                              <Shadow />
-                           </bumpInput>
-                           <light>
-                              <Light.Distant />
-                           </light>
-                        </Lighting>
-                     </effect></ComboBox>
-                  <Button fx:id="btNext" contentDisplay="GRAPHIC_ONLY" maxHeight="50.0" maxWidth="50.0" minHeight="50.0" minWidth="50.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" text="Next">
-                     <graphic>
-                        <ImageView fx:id="ivNext" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
-                           <image>
-                              <Image url="@../images/next_white.png" />
-                           </image>
-                        </ImageView>
-                     </graphic>
-                     <effect>
-                        <Lighting diffuseConstant="1.2">
-                           <bumpInput>
-                              <Shadow />
-                           </bumpInput>
-                           <light>
-                              <Light.Distant />
-                           </light>
-                        </Lighting>
-                     </effect>
-                  </Button>
-               </children>
-            </HBox>
-            <TextField id="view" fx:id="tfView" editable="false" focusTraversable="false" layoutX="10.0" layoutY="26.0" minHeight="-Infinity" prefHeight="50.0" text="ၵဝႃႈၵႆႇ ၵွပ်ႈတႆႇ မႆႉၼိူဝ်ၵွၼ်း။ ၶဝႃႈၶႆႇ မႄႈမၼ်း တႆႇမႃးငွမ်း။">
-               <effect>
-                  <Lighting diffuseConstant="2.0" specularConstant="0.23" specularExponent="10.92" surfaceScale="0.61">
-                     <bumpInput>
-                        <Shadow />
-                     </bumpInput>
-                     <light>
-                        <Light.Distant>
-                           <color>
-                              <Color red="0.7236841917037964" green="0.7236841917037964" blue="0.7236841917037964" />
-                           </color>
-                        </Light.Distant>
-                     </light>
-                  </Lighting>
-               </effect></TextField>
-            <TextField id="practice" fx:id="tfPractice" minHeight="-Infinity" prefHeight="50.0" translateZ="100" />
-            <VBox fx:id="vbKeyboardView" alignment="CENTER" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS">
-               <children>
-                  <HBox fx:id="row1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
-                  <HBox fx:id="row2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
-                  <HBox fx:id="row3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
-                  <HBox fx:id="row4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
-                  <HBox fx:id="row5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
-               </children>
-            </VBox>
-         </children>
-         <padding>
-            <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
-         </padding>
-      </VBox>
-   </center>
-   <bottom>
-      <HBox prefHeight="50.0" BorderPane.alignment="TOP_CENTER">
-         <children>
-            <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
-               <children>
-                  <Label fx:id="lblWPM" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="outcome" text="WORD PER MINUTE" HBox.hgrow="ALWAYS" />
-                  <Label fx:id="lbWPM" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0" textFill="WHITE" />
-               </children>
-            </HBox>
-            <HBox layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
-               <children>
-                  <Label fx:id="lblACCU" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="outcome" text="ACCURACY" HBox.hgrow="ALWAYS" />
-                  <Label fx:id="lbACCU" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0%" textFill="WHITE" HBox.hgrow="ALWAYS" />
-               </children>
-            </HBox>
-            <HBox layoutX="206.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
-               <children>
-                  <Label fx:id="lblMIST" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="outcome" text="MISTYPE" HBox.hgrow="ALWAYS" />
-                  <Label fx:id="lbMIST" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0" textFill="WHITE" HBox.hgrow="ALWAYS" />
-               </children>
-            </HBox>
-            <HBox layoutX="210.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
-               <children>
-                  <Label fx:id="lblAWPM" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" styleClass="outcome" text="AVERAGE WORD PER MINUTE" HBox.hgrow="ALWAYS" />
-                  <Label fx:id="lbAWPM" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0" textFill="WHITE" HBox.hgrow="ALWAYS" />
-               </children>
-            </HBox>
-         </children>
-      </HBox>
-   </bottom>
+                    </effect>
+                </TextField>
+                <TextField id="practice" fx:id="tfPractice" minHeight="-Infinity" prefHeight="50.0" translateZ="100" />
+                <VBox fx:id="vbKeyboardView" alignment="CENTER" fillWidth="false" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <HBox fx:id="row1" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
+                        <HBox fx:id="row2" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
+                        <HBox fx:id="row3" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
+                        <HBox fx:id="row4" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
+                        <HBox fx:id="row5" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" spacing="5.0" VBox.vgrow="ALWAYS" />
+                    </children>
+                </VBox>
+            </children>
+            <padding>
+                <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+            </padding>
+        </VBox>
+    </center>
+    <bottom>
+        <HBox prefHeight="50.0" BorderPane.alignment="TOP_CENTER">
+            <children>
+                <HBox maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="lblWPM" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="outcome" text="WORD PER MINUTE" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbWPM" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0" textFill="WHITE" />
+                    </children>
+                </HBox>
+                <HBox layoutX="10.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="lblACCU" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="outcome" text="ACCURACY" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbACCU" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0%" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox layoutX="206.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="lblMIST" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="outcome" text="MISTYPE" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbMIST" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox layoutX="210.0" layoutY="10.0" maxWidth="1.7976931348623157E308" prefHeight="100.0" spacing="15.0" HBox.hgrow="ALWAYS">
+                    <children>
+                        <Label fx:id="lblAWPM" alignment="TOP_RIGHT" maxHeight="1.7976931348623157E308" styleClass="outcome" text="AVERAGE WORD PER MINUTE" HBox.hgrow="ALWAYS" />
+                        <Label fx:id="lbAWPM" alignment="TOP_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefWidth="50.0" styleClass="outcome" text="0" textFill="WHITE" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+            </children>
+        </HBox>
+    </bottom>
 </BorderPane>

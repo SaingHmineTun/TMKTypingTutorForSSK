@@ -1,15 +1,12 @@
-package it.saimao.tmk_typing_tutor;
+package it.saimao.tmk_typing_tutor_ssk;
 
-import it.saimao.tmk_typing_tutor.key_map.NamKhone_KeyMap;
-import it.saimao.tmk_typing_tutor.key_map.Panglong_KeyMap;
-import it.saimao.tmk_typing_tutor.key_map.SIL_KeyMap;
-import it.saimao.tmk_typing_tutor.key_map.Yunghkio_KeyMap;
-import it.saimao.tmk_typing_tutor.model.Key;
-import it.saimao.tmk_typing_tutor.model.Lesson;
-import it.saimao.tmk_typing_tutor.model.Theme;
-import it.saimao.tmk_typing_tutor.utils.Perc;
-import it.saimao.tmk_typing_tutor.utils.UserSetting;
-import it.saimao.tmk_typing_tutor.utils.Utils;
+import it.saimao.tmk_typing_tutor_ssk.key_map.SIL_KeyMap;
+import it.saimao.tmk_typing_tutor_ssk.model.Key;
+import it.saimao.tmk_typing_tutor_ssk.model.Lesson;
+import it.saimao.tmk_typing_tutor_ssk.model.Theme;
+import it.saimao.tmk_typing_tutor_ssk.utils.Perc;
+import it.saimao.tmk_typing_tutor_ssk.utils.UserSetting;
+import it.saimao.tmk_typing_tutor_ssk.utils.Utils;
 import javafx.application.Platform;
 import javafx.collections.FXCollections;
 import javafx.event.EventHandler;
@@ -126,7 +123,6 @@ public class MainController implements Initializable {
         reqFocusOnPracticeField();
         cbKeyboard.getSelectionModel().select(UserSetting.loadKeyboard());
         Platform.runLater(this::loadUi);
-
     }
 
     private void loadUi() {
@@ -136,12 +132,6 @@ public class MainController implements Initializable {
 
     private void resetLevels(int keyboard) {
 
-        levelList.clear();
-        if (keyboard == 3)
-            levelList.addAll(Arrays.asList("ၵၢၼ်ၽိုၵ်း 1", "ၵၢၼ်ၽိုၵ်း 2", "ၵၢၼ်ၽိုၵ်း 3", "ၵၢၼ်ၽိုၵ်း 4").stream().toList());
-        else {
-            levelList.addAll(Arrays.asList("ၵၢၼ်ၽိုၵ်း 1", "ၵၢၼ်ၽိုၵ်း 2", "ၵၢၼ်ၽိုၵ်း 3").stream().toList());
-        }
         int seletedIndex = cbLevel.getSelectionModel().getSelectedIndex();
         cbLevel.getItems().setAll(FXCollections.observableArrayList(levelList));
         if (seletedIndex < 0) {
@@ -231,19 +221,14 @@ public class MainController implements Initializable {
 
         /************ START KEYBOARD **************/
 
-        levelList = new ArrayList<>();
+
+        levelList = List.of("ၵၢၼ်ၽိုၵ်း 1", "ၵၢၼ်ၽိုၵ်း 2", "ၵၢၼ်ၽိုၵ်း 3");
 
         cbKeyboard.getItems().setAll("လွၵ်းမိုဝ်း လၵ်းၸဵင်", "လွၵ်းမိုဝ်း ယုင်းၶဵဝ်", "လွၵ်းမိုဝ်း ပၢင်လူင်", "လွၵ်းမိုဝ်း ၼမ်ႉၶူင်း");
         cbKeyboard.getSelectionModel().selectedIndexProperty().addListener((observableValue, oldValue, newValue) -> {
             UserSetting.saveKeyboard(newValue.intValue());
             if (newValue.intValue() == 0) {
                 allValues = SIL_KeyMap.getAllValuesList();
-            } else if (newValue.intValue() == 1) {
-                allValues = Yunghkio_KeyMap.getAllValuesList();
-            } else if (newValue.intValue() == 2) {
-                allValues = Panglong_KeyMap.getAllValuesList();
-            } else {
-                allValues = NamKhone_KeyMap.getAllValuesList();
             }
             resetKeyboard();
             createKeyBoard();
@@ -829,18 +814,7 @@ public class MainController implements Initializable {
     private boolean isConverted;
 
     private String convertToShanChar(String character) {
-        String shanChar;
-        int keyboard = cbKeyboard.getSelectionModel().getSelectedIndex();
-        if (keyboard == 0) {
-            shanChar = SIL_KeyMap.getAllValuesMap().getOrDefault(character, "");
-        } else if (keyboard == 1) {
-            shanChar = Yunghkio_KeyMap.getAllValuesMap().getOrDefault(character, "");
-        } else if (keyboard == 2) {
-            shanChar = Panglong_KeyMap.getAllValuesMap().getOrDefault(character, "");
-        } else {
-            shanChar = NamKhone_KeyMap.getAllValuesMap().getOrDefault(character, "");
-        }
-        return shanChar;
+        return SIL_KeyMap.getAllValuesMap().getOrDefault(character, "");
 
     }
 

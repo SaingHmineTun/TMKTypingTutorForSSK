@@ -1,4 +1,4 @@
-package it.saimao.tmk_typing_tutor.utils;
+package it.saimao.tmk_typing_tutor_ssk.utils;
 
 
 import java.util.prefs.Preferences;

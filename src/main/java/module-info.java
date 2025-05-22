@@ -5,13 +5,13 @@ module it.saimao.hminepos {
     requires javafx.media;
     requires java.prefs;
 
-    exports it.saimao.tmk_typing_tutor;
-    opens it.saimao.tmk_typing_tutor to javafx.fxml;
-    exports it.saimao.tmk_typing_tutor.model;
-    opens it.saimao.tmk_typing_tutor.model to javafx.fxml;
-    exports it.saimao.tmk_typing_tutor.utils;
-    opens it.saimao.tmk_typing_tutor.utils to javafx.fxml;
-    exports it.saimao.tmk_typing_tutor.key_map;
-    opens it.saimao.tmk_typing_tutor.key_map to javafx.fxml;
+    exports it.saimao.tmk_typing_tutor_ssk;
+    opens it.saimao.tmk_typing_tutor_ssk to javafx.fxml;
+    exports it.saimao.tmk_typing_tutor_ssk.model;
+    opens it.saimao.tmk_typing_tutor_ssk.model to javafx.fxml;
+    exports it.saimao.tmk_typing_tutor_ssk.utils;
+    opens it.saimao.tmk_typing_tutor_ssk.utils to javafx.fxml;
+    exports it.saimao.tmk_typing_tutor_ssk.key_map;
+    opens it.saimao.tmk_typing_tutor_ssk.key_map to javafx.fxml;
 
 }

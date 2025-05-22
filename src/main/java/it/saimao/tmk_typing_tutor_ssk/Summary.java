@@ -1,4 +1,4 @@
-package it.saimao.tmk_typing_tutor;
+package it.saimao.tmk_typing_tutor_ssk;
 
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
